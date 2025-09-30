@@ -1,0 +1,14 @@
+[
+  {
+    "title": "OSS CLUB Founded",
+    "date": "2023-06-01",
+    "description": "The club was officially launched with its first GitHub repo.",
+    "image": "assets/oss-club-launch.png"
+  },
+  {
+    "title": "First Hackathon Win",
+    "date": "2024-01-15",
+    "description": "Team NightFuryX won the regional AI hackathon.",
+    "image": "assets/hackathon-win.png"
+  }
+]
