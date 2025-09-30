@@ -9,7 +9,7 @@ This module displays a chronological timeline of OSS CLUB events, meetups, and h
 - `assets/` – Posters and images for events
 
 ## How to Add a New Event
-1. Open `eventsData.json`
+1. Open `eventsData.json`. Some examples are provided within.
 2. Add a new object with:
    - `title`
    - `date`
