@@ -1,0 +1,40 @@
+.timeline-container
+{
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.timeline
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-card
+{
+  display: flex;
+  gap: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.event-image
+{
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.event-content
+{
+  flex: 1;
+}
+
+.event-date
+{
+  font-weight: bold;
+  color: #555;
+}
