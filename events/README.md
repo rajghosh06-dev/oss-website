@@ -44,7 +44,7 @@ This module is built using:
    - Linked via relative paths like `"assets/devcon2025.jpg"`.
 
 5. **Routing**
-   - The component is rendered via a route like `/events` (configured in `App.jsx` or equivalent).
+   - The component is rendered via a route like `/events` (can be configured in `App.jsx` or equivalent `not done`).
    - This allows users to visit a dedicated page for the timeline.
 
 6. **Contribution Workflow**
@@ -58,5 +58,3 @@ Visit the `/events` route to view the timeline.
 - Keep image sizes optimized
 - Use consistent formatting in JSON
 - Test layout responsiveness before pushing
-
----
