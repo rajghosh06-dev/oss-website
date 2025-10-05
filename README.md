@@ -80,13 +80,30 @@ oss-website/
 │   └── vite.config.js
 │
 ├── events/
-│   ├── EventCard.jsx
-│   ├── EventDetailsModal.jsx
-│   ├── EventsList.jsx
-│   ├── EventsTimeline.css
-│   ├── EventsTimeline.jsx
+│   ├── public/
+│   │   └── assets/
+│   │       ├── hacktoberfest2025.png
+│   │       ├── devcon2025.jpg
+│   │       └── default.png
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── eventsData.json
+│   │   │   └── EventsTimeline.css
+│   │   ├── components/
+│   │   │   └── events/
+│   │   │       ├── EventCard.jsx
+│   │   │       ├── EventCard.css
+│   │   │       ├── EventDetailsModal.jsx
+│   │   │       ├── EventDetailsModal.css
+│   │   │       ├── EventsGrid.jsx
+│   │   │       ├── EventGrid.css
+│   │   │       ├── EventTimeline.jsx
+│   │   │       └── EventTimeline.css
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
 │   ├── README.md
-│   └── eventsData.json
 │
 ├── intro/
 │   ├── public/
@@ -132,65 +149,28 @@ oss-website/
 │   ├── package.json
 │   └── vite.config.js
 │
-
-[NEED UPDATION]
-│   ├── components/
-│   │   ├── EventCard.jsx
-│   │   ├── EventDetailsModal.jsx
-│   │   ├── EventsList.jsx
-│   │   ├── EventsTimeline.css
-│   │   └── EventsTimeline.jsx
-│   ├── data/
-│   │   └── eventsData.json
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   ├── main.jsx
-│   ├── .gitignore
-│   ├── README.md
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   └── vite.config.js
-│
-│   └── (folder present, contents not listed)
-│
-
-│   └── (folder present, contents not listed)
-│
 ├── milestones/
-│   ├── MilestonesTimeline.css
-│   ├── MilestonesTimeline.jsx
-│   ├── milestonesData.json
-│   └── README.md
-│
-├── react-ui/
 │   ├── public/
-│   │   ├── vite.svg
-│   │   ├── apply/
-│   │   │   ├── apply_form.png
-│   │   │   └── gcetlogo.svg
-│   │   ├── bug_report/
-│   │   │   ├── bug_report.png
-│   │   │   └── gcetlogo.svg
-│   │   ├── contact/
-│   │   │   ├── contact.png
-│   │   │   └── gcetlogo.svg
-│   │   └── Breadcrumbs/
-│   │       └── (empty or pending assets)
-│   └── src/
-│       ├── assets/
-│       │   ├── Footer.css
-│       │   ├── Footer.jsx
-│       │   ├── HorizontalScrolling.jsx
-│       │   ├── Navbar.jsx
-│       │   └── App.jsx
-│       ├── index.css
-│       └── main.jsx
+│   │   └── assets/
+│   │       ├── oss-club-launch.png
+│   │       ├── hackathon-win.png
+│   │       └── default.png
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── milestonesData.json
+│   │   │   └── MilestonesTimeline.css
+│   │   ├── components/
+│   │   │   └── milestones/
+│   │   │       └── MilestonesTimeline.jsx
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── README.md
 │
 ├── LICENSE
 └── README.md
+
 ```
 
 ---
@@ -309,7 +289,7 @@ Contributors need to actively participate in the platform to help build, improve
 
 - Statuses: Idea, In Progress, Completed, Need Updation.
 - Recruitment Toggle: Open (accepting members) / Full.
-- Skill Tags: Match contributors to relevant projects. (optional/have to be viewed)
+- Skill Tags: Match contributors to relevant projects. (optional/have to be re-viewed)
 
 ---
 
