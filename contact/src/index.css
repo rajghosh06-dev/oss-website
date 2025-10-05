@@ -34,12 +34,4 @@ body {
   border: 2px solid #f4f4f9;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #000000, #000000);
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #000000 #f4f4f9;
-}
 
