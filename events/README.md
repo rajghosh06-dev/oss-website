@@ -1,44 +1,18 @@
-# OSS Club Events Timeline
+# React + Vite
 
-This module renders the OSS Club's events timeline using modular React components and structured JSON data. It is part of the `react-ui` workspace built with Vite.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Folder Structure
+Currently, two official plugins are available:
 
-- `EventCard.jsx`: Renders individual event cards.
-- `EventsList.jsx`: Maps and displays a list of events.
-- `EventDetailsModal.jsx`: Displays expanded event details in a modal.
-- `EventsTimeline.jsx`: Main timeline component.
-- `EventsTimeline.css`: Scoped styling for the timeline layout.
-- `eventsData.json`: Structured data for all events.
-- `other/`: Empty as of nw.
-- `assets/`: Optional images or icons used in event cards.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## React Compiler
 
-- Component-based architecture for reusability and clarity.
-- Data-driven rendering using `eventsData.json`.
-- Conditional display of registration links and modal interactions.
-- Scoped styling for layout and responsiveness.
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-## Integration
+Note: This will impact Vite dev & build performances.
 
-All components and data files have been migrated to the `react-ui/src/` workspace:
-- Components → `src/components/events/`
-- Data → `src/data/eventsData.json`
-- Styles → `src/components/events/EventsTimeline.css`
+## Expanding the ESLint configuration
 
-## Usge
-
-Import and render the timeline in `App.jsx`:
-
-```jsx
-import EventsTimeline from './components/events/EventsTimeline';
-import eventsData from './data/eventsData.json';
-
-<EventsTimeline events={eventsData} />
-```
-
-## Notes
-
-- Ensure correct relative import paths when using JSON or CSS files.
-- Designed for future expansion with routing and API integration.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -1,6 +1,6 @@
 import React from 'react';
-import events from './eventsData.json';
-import './EventsTimeline.css';
+import events from '../../assets/eventsData.json';
+import './EventTimeline.css';
 
 function EventsTimeline()
 {

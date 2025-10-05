@@ -3,14 +3,14 @@
     "title": "Hacktoberfest 2025",
     "date": "2025-10-01",
     "description": "Annual open source celebration with global participation.",
-    "image": "assets/hacktoberfest2025.png",
+    "image": "/assets/hacktoberfest2025.png",
     "link": "https://hacktoberfest.com"
   },
   {
-    "title": "GCET DevCon",
+    "title": "GCET DEV TRIAL",
     "date": "2025-08-15",
     "description": "Tech conference hosted by OSS CLUB with talks and workshops.",
-    "image": "assets/devcon2025.jpg",
+    "image": "/assets/devcon2025.jpg",
     "link": "https://gcetdevcon.com"
   }
 ]

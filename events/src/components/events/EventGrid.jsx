@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import events from './eventsData.json';
+import events from '../../assets/eventsData.json';
 import EventCard from './EventCard';
-import EventDetailsModal from './new/EventDetailsModal';
-import './EventsList.css'; // Optional styling
+import EventDetailsModal from './EventDetailsModal';
+import './EventGrid.css'; // Optional styling
 
 function EventsList() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -23,4 +23,4 @@ function EventsList() {
   );
 }
 
-export default EventsList;
+export default EventGrid;

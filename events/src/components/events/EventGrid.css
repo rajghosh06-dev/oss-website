@@ -1,0 +1,21 @@
+.events-grid-container
+{
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.events-grid-container h2
+{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.events-grid
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
