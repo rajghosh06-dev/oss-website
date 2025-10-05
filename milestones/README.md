@@ -1,40 +1,18 @@
-# OSS Club Milestones Timeline
+# React + Vite
 
-This module displays the OSS Club's milestones in a chronological timeline using React and JSON data. It is part of the `react-ui` frontend workspace.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Folder Structure
+Currently, two official plugins are available:
 
-- `MilestonesTimeline.jsx`: Main component for rendering milestones.
-- `MilestonesTimeline.css`: Scoped styling for milestone layout.
-- `milestonesData.json`: Structured data for all milestones.
-- `assets/`: Optional images or icons used in milestone entries.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Feature
+## React Compiler
 
-- Declarative rendering of milestones using React.
-- Data-driven layout powered by `milestonesData.json`.
-- Modular styling for clean visual hierarchy.
-- Easy to extend with new milestone entries or styles.
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-## Integration
+Note: This will impact Vite dev & build performances.
 
-All files have been migrated to the `react-ui/src/` workspace:
-- Component → `src/components/milestones/MilestonesTimeline.jsx`
-- Data → `src/data/milestonesData.json`
-- Styles → `src/components/milestones/MilestonesTimeline.css`
+## Expanding the ESLint configuration
 
-## Usage
-
-Import and render the timeline in `App.jsx`:
-
-```jsx
-import MilestonesTimeline from './components/milestones/MilestonesTimeline';
-import milestonesData from './data/milestonesData.json';
-
-<MilestonesTimeline milestones={milestonesData} />
-```
-
-## Notes
-
-- Ensure correct relative paths for JSON and CSS imports.
-- Designed for future enhancements including filtering and accessibility.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

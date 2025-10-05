@@ -1,5 +1,5 @@
 import React from 'react';
-import milestones from './milestonesData.json';
+import milestones from '../../assets/milestonesData.json';
 import './MilestonesTimeline.css';
 
 function MilestonesTimeline()
