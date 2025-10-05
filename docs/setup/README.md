@@ -109,4 +109,4 @@ Recommended extensions:
 
 ## You're Ready!
 
-You can now explore, edit, and contribute to the OSS Club website. For contribution guidelines, refer to the root [README.md](./README.md).
+You can now explore, edit, and contribute to the OSS Club website. For contribution guidelines, refer to the root [README.md](../../README.md#roles--permissions-overview).
