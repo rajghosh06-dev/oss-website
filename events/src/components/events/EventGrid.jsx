@@ -4,7 +4,7 @@ import EventCard from './EventCard';
 import EventDetailsModal from './EventDetailsModal';
 import './EventGrid.css'; // Optional styling
 
-function EventsList() {
+function EventGrid() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (

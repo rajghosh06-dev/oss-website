@@ -2,7 +2,7 @@ import React from 'react';
 import events from '../../assets/eventsData.json';
 import './EventTimeline.css';
 
-function EventsTimeline()
+function EventTimeline()
 {
   return(
     <div className="timeline-container">
@@ -24,4 +24,4 @@ function EventsTimeline()
   );
 }
 
-export default EventsTimeline;
+export default EventTimeline;

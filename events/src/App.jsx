@@ -1,6 +1,6 @@
 import React from 'react';
-import EventsGrid from './components/events/EventsGrid';
-import EventsTimeline from './components/events/EventsTimeline';
+import EventsGrid from './components/events/EventGrid';
+import EventsTimeline from './components/events/EventTimeline';
 import './App.css';
 
 function App() {
