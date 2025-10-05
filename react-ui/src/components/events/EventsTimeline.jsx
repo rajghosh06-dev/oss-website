@@ -1,8 +1,8 @@
 import React from 'react';
-import events from './eventsData.json';
+import events from '../../data/eventsData.json';
 import './EventsTimeline.css';
 
-function EventsTimeline()
+function EventsTimeline({ events})
 {
   return(
     <div className="timeline-container">

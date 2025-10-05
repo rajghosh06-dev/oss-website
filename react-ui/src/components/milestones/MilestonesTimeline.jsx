@@ -1,8 +1,8 @@
 import React from 'react';
-import milestones from './milestonesData.json';
+import milestones from '../../data/milestonesData.json';
 import './MilestonesTimeline.css';
 
-function MilestonesTimeline()
+function MilestonesTimeline({ milestones})
 {
   return (
     <section className="milestones-container">
