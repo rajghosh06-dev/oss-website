@@ -249,39 +249,110 @@ For full setup instructions (Node.js, npm, Vite, Go, folder structure), see:
 
 ---
 
-## 🧑‍💻 Contributor Role Overview
 
-Contributors need to actively participate in the platform to help build, improve, and engage with projects. Their role is flexible, collaborative, and designed to encourage open participation.  
+## Roles & Permissions Overview
 
-### Permissions
+Click to expand each role’s details:
 
-- Can **view all projects**: ongoing, past, and upcoming.
-- Can **contribute to any project** if permitted by the project’s maintainer.
-- Can **participate freely in discussions** (via forums or chat, post-MVP).
-- Can **express opinions** openly—no special permissions required for communication.  
+<details>
+<summary><strong>🧑‍🏫 Admin</strong></summary>
 
+Admins oversee platform operations and manage all roles below them.
 
-### Collaboration
+**Permissions:**
+- Approve or deny project creation requests.
+- Create or delete any project.
+- Add or remove creators, maintainers, and contributors.
 
-- Contributors are encouraged to engage in project forums and team discussions.
-- They may be invited to join projects based on skill tags or availability.
-- They do not require approval to share feedback or ideas.
+**Restrictions:**
+- Cannot manage super admin roles.
 
----
+**Notes:**
+- Full control over project lifecycle and team structure.
+- Can view all projects across statuses.
 
-### 🚫 Restrictions
+</details>
 
-- Cannot contribute to **past or upcoming projects** (only active ones).
-- Cannot appoint others or manage project roles.
-- Must be explicitly added by a maintainer to contribute to a specific project.
+<details>
+<summary><strong>🎨 Creator</strong></summary>
 
----
+Creators initiate and lead projects with broad control over their own teams.
 
-### Notes
+**Permissions:**
+- View all projects and deleted ones they created.
+- Create new projects (with admin approval).
+- Delete their own projects.
+- Appoint maintainers and contributors to their projects.
 
-- There is **no limit** to the number of contributions a contributor can make.
-- Contributors may be part of multiple projects simultaneously.
-- Violations of role boundaries trigger error messages (e.g., unauthorized actions).
+**Restrictions:**
+- Cannot delete projects created by others.
+- Cannot manage roles outside their own projects.
+
+**Notes:**
+- Maintainers inherit most permissions except deletion.
+- Can contribute to any project.
+
+</details>
+
+<details>
+<summary><strong>🛠️ Maintainer</strong></summary>
+
+Maintainers help manage specific projects under a creator’s supervision.
+
+**Permissions:**
+- View and contribute to assigned projects.
+- Appoint or remove contributors (with creator’s permission).
+- Participate freely in discussions.
+
+**Restrictions:**
+- Cannot create or delete projects.
+- Cannot manage roles outside their assigned project.
+
+**Notes:**
+- Can maintain multiple projects.
+- Do not need approval to be appointed by a creator.
+
+</details>
+
+<details>
+<summary><strong>🧑‍💻 Contributor</strong></summary>
+
+Contributors actively participate in ongoing projects.
+
+**Permissions:**
+- View all projects: ongoing, past, and upcoming.
+- Contribute to ongoing projects if added by a maintainer.
+- Freely participate in forums and express opinions.
+
+**Restrictions:**
+- Cannot contribute to past or upcoming projects.
+- Cannot appoint or manage roles.
+- Must be explicitly added by a maintainer.
+
+**Notes:**
+- Unlimited contributions.
+- Can be part of multiple projects.
+- Unauthorized actions trigger error messages.
+
+</details>
+
+<details>
+<summary><strong>👀 Viewer</strong></summary>
+
+Viewers include all users, even those without a formal role.
+
+**Permissions:**
+- View any listed project.
+- Report bugs to any project.
+
+**Restrictions:**
+- Cannot contribute or manage roles.
+
+**Notes:**
+- Universal access for browsing and feedback.
+
+</details>
+
 
 ---
 
