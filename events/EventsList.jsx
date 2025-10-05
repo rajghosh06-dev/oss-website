@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import events from './eventsData.json';
 import EventCard from './EventCard';
-import EventDetailsModal from './EventDetailsModal';
+import EventDetailsModal from './new/EventDetailsModal';
 import './EventsList.css'; // Optional styling
 
 function EventsList() {
