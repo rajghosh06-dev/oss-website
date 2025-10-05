@@ -1,60 +1,44 @@
-# Events & Activities Timeline
+# OSS Club Events Timeline
 
-This module displays a chronological timeline of OSS CLUB events, meetups, and hackathons.
+This module renders the OSS Club's events timeline using modular React components and structured JSON data. It is part of the `react-ui` workspace built with Vite.
 
 ## Folder Structure
-- `EventsTimeline.jsx` – Main React component
-- `eventsData.json` – Event metadata (title, date, description, image, link)
-- `EventsTimeline.css` – Styling for timeline layout
-- `assets/` – Posters and images for events
 
-## How to Add a New Event
-1. Open `eventsData.json`. Some examples are provided within.
-2. Add a new object with:
-   - `title`
-   - `date`
-   - `description`
-   - `image` (path relative to `assets/`)
-   - `link` (optional)
+- `EventCard.jsx`: Renders individual event cards.
+- `EventsList.jsx`: Maps and displays a list of events.
+- `EventDetailsModal.jsx`: Displays expanded event details in a modal.
+- `EventsTimeline.jsx`: Main timeline component.
+- `EventsTimeline.css`: Scoped styling for the timeline layout.
+- `eventsData.json`: Structured data for all events.
+- `other/`: Empty as of nw.
+- `assets/`: Optional images or icons used in event cards.
 
-## Technologies Used
+## Features
 
-This module is built using:
+- Component-based architecture for reusability and clarity.
+- Data-driven rendering using `eventsData.json`.
+- Conditional display of registration links and modal interactions.
+- Scoped styling for layout and responsiveness.
 
-- **React.js** – For building the EventsTimeline component and rendering dynamic content.
-- **JSON** – Used to store and manage event data in a structured format (`eventsData.json`).
-- **CSS** – For styling the timeline layout and cards.
+## Integration
 
-## How It All Links Together
+All components and data files have been migrated to the `react-ui/src/` workspace:
+- Components → `src/components/events/`
+- Data → `src/data/eventsData.json`
+- Styles → `src/components/events/EventsTimeline.css`
 
-1. **Component (`EventsTimeline.jsx`)**
-   - Imports and maps data from `eventsData.json`.
-   - Renders each event as a timeline card with image, title, date, description, and link.
+## Usge
 
-2. **Data (`eventsData.json`)**
-   - Acts as a centralized source for all event metadata.
-   - Easy to update—just add a new object to the array.
+Import and render the timeline in `App.jsx`:
 
-3. **Styling (`EventsTimeline.css`)**
-   - Controls layout, spacing, and responsiveness.
-   - Can be replaced or extended with Tailwind classes if preferred.
+```jsx
+import EventsTimeline from './components/events/EventsTimeline';
+import eventsData from './data/eventsData.json';
 
-4. **Assets (`assets/`)**
-   - Stores event posters and images referenced in the JSON.
-   - Linked via relative paths like `"assets/devcon2025.jpg"`.
+<EventsTimeline events={eventsData} />
+```
 
-5. **Routing**
-   - The component is rendered via a route like `/events` (can be configured in `App.jsx` or equivalent `not done`).
-   - This allows users to visit a dedicated page for the timeline.
+## Notes
 
-6. **Contribution Workflow**
-   - Members fork the repo, create a branch, add events, and raise a pull request.
-   - Maintainers review and merge changes into the main branch.
-
-## Preview
-Visit the `/events` route to view the timeline.
-
-## Contribution Tips
-- Keep image sizes optimized
-- Use consistent formatting in JSON
-- Test layout responsiveness before pushing
+- Ensure correct relative import paths when using JSON or CSS files.
+- Designed for future expansion with routing and API integration.
