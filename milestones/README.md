@@ -6,7 +6,7 @@ This module displays a chronological timeline of key milestones in the OSS CLUB'
 
 - `MilestonesTimeline.jsx` – React component that renders the timeline
 - `milestonesData.json` – Structured data for each milestone
-- `MilestonesTimeline.css` – Styling for layout and responsiveness
+- `MilestonesTimeline.css` – Styling for layout, responsiveness, and dark mode
 - `README.md` – Documentation and contributor guidelines
 - `assets/` – Images associated with each milestone
 
@@ -21,8 +21,9 @@ This module displays a chronological timeline of key milestones in the OSS CLUB'
 
 1. `MilestonesTimeline.jsx` imports data from `milestonesData.json`
 2. Each milestone is rendered as a card with image, title, date, and description
-3. Styling is handled via `MilestonesTimeline.css`
+3. Styling includes vertical timeline indicators and responsive layout
 4. Images are stored in the `assets/` folder and referenced via relative paths
+5. Fallback image is used if any milestone image is missing
 
 ## How to Add a New Milestone
 
@@ -57,9 +58,11 @@ import MilestonesTimeline from './milestones/MilestonesTimeline';
 - Optimize image sizes for performance
 - Test layout responsiveness before pushing
 - Commit with clear messages and modular structure
+- Ensure fallback image is present (`assets/default.png`)
 
 ## Future Enhancements
 
-- Add vertical timeline indicators
-- Enable filtering by year or category
+- Add year-based filtering or category tags
 - Integrate GitHub API for dynamic contributor stats
+- Add animation on scroll (e.g., fade-in)
+- Enable milestone submission via form
