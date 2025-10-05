@@ -1,68 +1,40 @@
-# OSS CLUB Milestones Timeline
+# OSS Club Milestones Timeline
 
-This module displays a chronological timeline of key milestones in the OSS CLUB's journey, such as founding events, hackathon wins, and major achievements.
+This module displays the OSS Club's milestones in a chronological timeline using React and JSON data. It is part of the `react-ui` frontend workspace.
 
 ## Folder Structure
 
-- `MilestonesTimeline.jsx` – React component that renders the timeline
-- `milestonesData.json` – Structured data for each milestone
-- `MilestonesTimeline.css` – Styling for layout, responsiveness, and dark mode
-- `README.md` – Documentation and contributor guidelines
-- `assets/` – Images associated with each milestone
+- `MilestonesTimeline.jsx`: Main component for rendering milestones.
+- `MilestonesTimeline.css`: Scoped styling for milestone layout.
+- `milestonesData.json`: Structured data for all milestones.
+- `assets/`: Optional images or icons used in milestone entries.
 
-## Technologies Used
+## Feature
 
-- React.js for component rendering
-- JSON for milestone data management
-- CSS for styling and layout
-- GitHub for version control and collaboration
+- Declarative rendering of milestones using React.
+- Data-driven layout powered by `milestonesData.json`.
+- Modular styling for clean visual hierarchy.
+- Easy to extend with new milestone entries or styles.
 
-## How It Works
+## Integration
 
-1. `MilestonesTimeline.jsx` imports data from `milestonesData.json`
-2. Each milestone is rendered as a card with image, title, date, and description
-3. Styling includes vertical timeline indicators and responsive layout
-4. Images are stored in the `assets/` folder and referenced via relative paths
-5. Fallback image is used if any milestone image is missing
+All files have been migrated to the `react-ui/src/` workspace:
+- Component → `src/components/milestones/MilestonesTimeline.jsx`
+- Data → `src/data/milestonesData.json`
+- Styles → `src/components/milestones/MilestonesTimeline.css`
 
-## How to Add a New Milestone
+## Usage
 
-1. Open `milestonesData.json`
-2. Add a new object with the following structure:
-   ```json
-   {
-     "title": "Example Milestone",
-     "date": "YYYY-MM-DD",
-     "description": "Brief description of the milestone.",
-     "image": "assets/example-image.png"
-   }
-   ```
-3. Place the corresponding image in the `assets/` folder
-4. Ensure the image path matches the `image` field in the JSON
+Import and render the timeline in `App.jsx`:
 
-## Preview
-
-To view the timeline, import and render `MilestonesTimeline.jsx` in your routing file (e.g., `App.jsx`) and assign it to a route like `/milestones`.
-
-Example:
 ```jsx
-import MilestonesTimeline from './milestones/MilestonesTimeline';
+import MilestonesTimeline from './components/milestones/MilestonesTimeline';
+import milestonesData from './data/milestonesData.json';
 
-<Route path="/milestones" element={<MilestonesTimeline />} />
+<MilestonesTimeline milestones={milestonesData} />
 ```
 
-## Contribution Guidelines
+## Notes
 
-- Keep milestone descriptions concise and factual
-- Use consistent formatting in `milestonesData.json`
-- Optimize image sizes for performance
-- Test layout responsiveness before pushing
-- Commit with clear messages and modular structure
-- Ensure fallback image is present (`assets/default.png`)
-
-## Future Enhancements
-
-- Add year-based filtering or category tags
-- Integrate GitHub API for dynamic contributor stats
-- Add animation on scroll (e.g., fade-in)
-- Enable milestone submission via form
+- Ensure correct relative paths for JSON and CSS imports.
+- Designed for future enhancements including filtering and accessibility.
